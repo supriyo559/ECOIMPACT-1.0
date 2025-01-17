@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.calculator {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.form-section {
+    flex: 1;
+    min-width: 300px;
+}
+h2 {
+    color: #333;
+}
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    color: #555;
+}
+select, input[type="number"], input[type="text"], button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+.results {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.results h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+.transport-methods {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.transport-method {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.transport-method.active {
+    border-color: #007bff;
+    background-color: #e9f4ff;
+}

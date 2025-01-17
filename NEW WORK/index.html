@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint & Product Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carbon Footprint & Product Cost Calculator</h1>
+    </header>
+    <div class="container">
+        <div class="calculator">
+            <div class="form-section">
+                <h2>Choose Your Product</h2>
+                <label for="product">Select Product:</label>
+<select id="product">
+    <option value="product1">Apple</option>
+    <option value="product2">Banana</option>
+    <option value="product3">Carrot</option>
+    <option value="product4">Mango</option>
+    <option value="product5">Orange</option>
+    <option value="product6">Watermelon</option>
+    <option value="product7">Cucumber</option>
+    <option value="product8">Onion</option>
+    <option value="product9">Tomato</option>
+    <option value="product10">Guava</option>
+</select>
+
+
+<label for="weight">Weight:</label>
+<div>
+    <input type="number" id="weight" placeholder="Enter weight">
+    <select id="weight-unit">
+        <option value="kg">Kilograms</option>
+        <option value="g">Grams</option>
+    </select>
+</div>
+
+
+                <h2>Select Travel Method</h2>
+                <div class="transport-methods">
+                    <div class="transport-method" data-method="train">Train</div>
+                    <div class="transport-method" data-method="truck">Truck</div>
+                    <div class="transport-method" data-method="bike">Bike</div>
+                </div>
+
+                <h2>Enter Locations</h2>
+                <label for="from-location">From:</label>
+                <input type="text" id="from-location" placeholder="Enter starting location">
+
+                <label for="to-location">To:</label>
+                <input type="text" id="to-location" placeholder="Enter destination">
+
+                <button id="calculate">Calculate</button>
+            </div>
+
+            <div class="results" id="results">
+                <h3>Your Carbon Footprint & Cost</h3>
+                <p id="total-distance">Total Distance: -</p>
+                <p id="carbon-footprint">Carbon Footprint: -</p>
+                <p id="product-cost">Cost of Product: -</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
